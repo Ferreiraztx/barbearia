@@ -12,4 +12,10 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Adicione este bloco aqui para passar a configuração direto para o Vite interno do Lovable:
+  vite: {
+    preview: {
+      allowedHosts: true
+    }
+  }
 });
