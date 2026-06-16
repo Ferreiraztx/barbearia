@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "framework": "vinxi",
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/nitro"
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": ".output/server/index.mjs"
     }
   ]
 }
