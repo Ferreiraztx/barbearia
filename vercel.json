@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "framework": "tanstack-start",
-  "routes": [
+  "framework": "vinxi",
+  "builds": [
     {
-      "src": "/.*",
-      "dest": ".output/server/index.mjs"
+      "src": "package.json",
+      "use": "@vercel/nitro"
     }
   ]
 }
